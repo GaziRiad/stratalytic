@@ -1,15 +1,57 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary-800: #17181c;
+  --color-primary-700: #232428;
+  --color-primary-200: #e8e9ed;
+
+  --color-accent-700: #0800e9;
+
+  --font-sans: var(--font-josefin-sans), sans-serif;
+  --font-secondary: var(--font-work-sans), sans-serif;
+  --text-3xl: 1.75rem;
+  --text-5xl: 2.75rem;
+  --text-6xl: 3.25rem;
+  --text-8xl: 5.75rem;
+  --spacing-heading: 60.25rem;
+  --spacing-8xl: 90rem;
+
+  --radius-5xl: 2.5rem;
+}
+
+/* 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@theme inline {
+
+
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --color-primary-50: #f0f9ff;
+  --color-primary-100: #e0f2fe;
+  --color-primary-500: #0ea5e9;
+  --color-primary-600: #0284c7;
+  --color-primary-900: #0c4a6e;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+
+  --spacing-18: 4.5rem;
+  --spacing-72: 18rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +64,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  font-family: var(--font-sans), sans-serif;
+} */
