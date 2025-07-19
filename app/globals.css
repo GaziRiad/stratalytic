@@ -5,6 +5,7 @@
 @theme {
   --color-primary-800: #17181c;
   --color-primary-700: #232428;
+  --color-primary-300: #999a9e;
   --color-primary-200: #e8e9ed;
 
   --color-accent-700: #0800e9;
@@ -16,6 +17,7 @@
   --text-6xl: 3.25rem;
   --text-8xl: 5.75rem;
   --spacing-heading: 60.25rem;
+  --spacing-3xl: 45rem;
   --spacing-8xl: 90rem;
 
   --radius-5xl: 2.5rem;

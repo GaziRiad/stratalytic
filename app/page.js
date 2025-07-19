@@ -1,13 +1,16 @@
 import HeroSection from "@/components/HeroSection";
+import Image from "next/image";
 import Link from "next/link";
 import { IoMdArrowForward } from "react-icons/io";
+
+import profileImg from "@/public/images/profile.png";
 
 export default function page() {
   return (
     <>
       <HeroSection />
-      <section className="bg-primary-800 mb-[90px] min-h-screen text-white">
-        <div className="max-w-8xl mx-auto py-28">
+      <section className="bg-primary-800 min-h-screen py-28 text-white">
+        <div className="max-w-8xl mx-auto mb-24">
           <h2 className="mb-20 max-w-[1020px] text-5xl leading-[110%]">
             Stratalytic vertaalt data naar werkende oplossingen voor jouw
             business. Welke bronnen je ook gebruikt, wij maken de connectie en
@@ -54,6 +57,24 @@ export default function page() {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* PROFILE */}
+        <div className="mx-auto flex max-w-fit items-center gap-10">
+          <Image
+            src={profileImg}
+            alt="Image of profile"
+            className="max-h-44 max-w-44 rounded-2xl object-cover object-top"
+          />
+          <div className="max-w-3xl">
+            <p className="mb-4 text-4xl">
+              Starten met AI gedreven keuzes maken
+            </p>
+            <p className="text-primary-300 font-secondary">
+              Sunt commodo sint ipsum proident qui non enim dolor officia amet
+              adipisicing consectetur aliqua. Laboris duis dolore cupidatat.
+            </p>
           </div>
         </div>
       </section>
