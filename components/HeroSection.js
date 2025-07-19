@@ -11,6 +11,7 @@ export default function HeroSection() {
       <Image
         src={img}
         alt="Hero Pattern"
+        priority={true}
         className="absolute -top-50 -z-10 scale-[60%] object-cover object-[center_-10%]"
       />
       {/* Gradient overlay - fades from transparent (top) to white (bottom) */}
