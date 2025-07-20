@@ -1,9 +1,7 @@
 import Image from "next/image";
-import React from "react";
-
 import img from "@/public/images/heroPattern.png";
-import { IoMdArrowForward } from "react-icons/io";
-import Link from "next/link";
+
+import MainButton from "./ui/MainButton";
 
 export default function HeroSection() {
   return (
@@ -21,20 +19,7 @@ export default function HeroSection() {
         <h1 className="max-w-heading text-center text-8xl">
           Artificial Intelligence voor verbeteren van bedrijfs resultaten
         </h1>
-        <div className="flex items-center gap-[7px]">
-          <Link
-            href="#"
-            className="bg-primary-800 rounded-5xl font-secondary hover:bg-primary-700 flex h-10 items-center justify-center px-[18px] tracking-tight text-white transition-all"
-          >
-            Plan een gratis consult
-          </Link>
-          <Link
-            href="#"
-            className="bg-primary-800 hover:bg-primary-700 flex items-center justify-center rounded-full p-2.5 transition-all"
-          >
-            <IoMdArrowForward className="text-lg text-white" />
-          </Link>
-        </div>
+        <MainButton />
       </div>
     </section>
   );
