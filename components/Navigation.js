@@ -1,5 +1,5 @@
 import Link from "next/link";
-import MainButton from "./ui/MainButton";
+import MainButton from "./MainButton";
 import { CiGlobe } from "react-icons/ci";
 
 const NAVLINKS = [

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import img from "@/public/images/heroPattern.png";
 
-import MainButton from "./ui/MainButton";
+import MainButton from "./MainButton";
 
 export default function HeroSection() {
   return (

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { IoMdArrowForward } from "react-icons/io";
 
 import profileImg from "@/public/images/profile.png";
-import MainButton from "@/components/ui/MainButton";
+import MainButton from "@/components/MainButton";
 
 export default function AboutSection() {
   return (
