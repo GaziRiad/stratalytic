@@ -4,6 +4,7 @@ import { IoMdArrowForward } from "react-icons/io";
 
 import profileImg from "@/public/images/profile.png";
 import MainButton from "@/components/MainButton";
+import HomeAccordion from "./HomeAccordion";
 
 export default function AboutSection() {
   return (
@@ -15,13 +16,13 @@ export default function AboutSection() {
           creëren een platform waarop je processen soepeler draaien en je
           organisatie beter presteert.
         </h2>
-
         <div className="bg-primary-200 flex rounded-4xl px-5 py-6">
           <h3 className="text-primary-800 flex-1 pt-8 pl-10 text-6xl">
             Van problemen naar oplossingen
           </h3>
+          <HomeAccordion />
 
-          <div className="flex flex-1 flex-col justify-center gap-5">
+          {/* <div className="flex flex-1 flex-col justify-center gap-5">
             <div className="bg-accent-700 flex flex-1 flex-col rounded-2xl px-8 py-5">
               <p className="mb-3 max-w-md text-3xl tracking-tight">
                 Veel data, maar geen idee wat ermee te doen
@@ -42,20 +43,19 @@ export default function AboutSection() {
                 <IoMdArrowForward className="text-lg text-white" />
               </Link>
             </div>
-            {/*  */}
             <div className="flex flex-1 flex-col rounded-2xl bg-white px-8 py-5">
               <p className="text-primary-700 mb-3 max-w-md text-3xl tracking-tight">
                 Mooie dashboards, niemand die ze gebruikt
               </p>
             </div>
-            {/*  */}
             <div className="flex flex-1 flex-col rounded-2xl bg-white px-8 py-5">
               <p className="text-primary-700 mb-3 max-w-md text-3xl tracking-tight">
                 Investeren in data zonder resultaat
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
+        {/*  */}
       </div>
 
       {/* PROFILE */}
