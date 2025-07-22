@@ -49,7 +49,7 @@ const ITEMS = [
 ];
 
 // Timer configuration
-const SLIDE_DURATION = 5000; // 5 seconds per slide
+const SLIDE_DURATION = 5000; // 10 seconds per slide
 const PROGRESS_UPDATE_INTERVAL = 100; // Update progress every 100ms
 
 export default function CasesCarousel() {
@@ -84,21 +84,24 @@ export default function CasesCarousel() {
     if (!api) return;
 
     // Add a small delay to let the slide transition start first
-    const scrollTimer = setTimeout(() => {
-      // Calculate which slide should be at the start of the viewport
-      // Keep active slide more centered when possible
-      let scrollToIndex = 0;
+    const scrollTimer = setTimeout(
+      () => {
+        // Calculate which slide should be at the start of the viewport
+        // Keep active slide more centered when possible
+        let scrollToIndex = 0;
 
-      if (currentSlide >= 3 && currentSlide < ITEMS.length - 1) {
-        // Center the active slide: [prev] [active] [next] [next+1]
-        scrollToIndex = currentSlide - 2;
-      } else if (currentSlide === ITEMS.length - 1) {
-        // Last slide: show last 4 slides
-        scrollToIndex = Math.max(0, ITEMS.length - 4);
-      }
+        if (currentSlide >= 3 && currentSlide < ITEMS.length - 1) {
+          // Center the active slide: [prev] [active] [next] [next+1]
+          scrollToIndex = currentSlide - 2;
+        } else if (currentSlide === ITEMS.length - 1) {
+          // Last slide: show last 4 slides
+          scrollToIndex = Math.max(0, ITEMS.length - 4);
+        }
 
-      api.scrollTo(scrollToIndex);
-    }, 100); // Small delay to let slide transition start
+        api.scrollTo(scrollToIndex);
+      },
+      currentSlide === 0 ? 100 : 1500,
+    ); // Small delay to let slide transition start
 
     return () => clearTimeout(scrollTimer);
   }, [currentSlide, api]);
