@@ -9,7 +9,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { IoMdArrowForward } from "react-icons/io";
-import { Slider } from "./ui/slider";
 
 const ITEMS = [
   {
